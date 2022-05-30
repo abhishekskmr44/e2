@@ -1,0 +1,20 @@
+.task {
+  /* Sample  */
+  display: flex;
+  margin-left: -28px;
+  margin-bottom: 12px;
+}
+
+.taskCheckbox{
+  margin-right: 22px;
+}
+
+.task > div{
+  margin-right: 22px;
+}
+
+.task > button {
+  margin-left: 14px;
+  margin-right: 15px;
+  
+}

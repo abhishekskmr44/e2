@@ -1,0 +1,15 @@
+.counter {
+  /* TODO */
+  
+  width: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 22px;
+
+}
+
+.btnCount {
+   background-color: rgb(216, 65, 27);
+}

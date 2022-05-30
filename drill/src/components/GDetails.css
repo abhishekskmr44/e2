@@ -1,0 +1,86 @@
+*{
+    font-family:JioBold;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(5,20%);
+    grid-gap:5px;
+    margin-left: 60px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p{
+    font-size: 12px;
+  
+    text-overflow:wrap;
+    overflow:wrap;
+}
+.price{
+    font-size: 12px;
+    display:flex;
+    justify-content:left;    
+    text-overflow:wrap;
+    gap:5px;
+}
+
+h4{
+    text-decoration: line-through;
+}
+h1{
+    
+    border: 1px solid rgb(114, 111, 111);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.topdeal{
+    text-align: left;
+    font-size:2em;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(219, 9, 79);
+    height: 40px;
+    width: 135px;
+    border-radius: 10px;
+}
+.addcart{
+    background-color:navy;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 10px;
+   
+}
+.all-btn{
+    display: flex;
+}
+.btn{
+    display: flex;
+    margin: 10px;
+  
+}
+.btn > button{
+    margin-right: 8px;
+    margin-left: 10px;
+    height: 25px;
+    
+}
+
+.sam{
+    background-color:navy;
+    color: white;
+    font-size: 40px;
+    /* margin-top: -0.1px; */
+
+}

@@ -1,0 +1,13 @@
+.taskApp {
+  
+  margin: auto;
+  width: 49%;
+}
+.header{
+  margin-left: 64px;
+}
+
+.tasktop {
+  background-color: rgb(255, 0, 128);
+  padding: 20px;
+}
