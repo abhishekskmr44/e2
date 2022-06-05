@@ -1,0 +1,54 @@
+#footer-container {
+    border: 1px solid transparent;
+    width: 88%;
+    margin: auto;
+  }
+  #first-con {
+    border: 1px solid transparent;
+  }
+  #txt-first-con > div {
+    border: 1px solid transparent;
+    width: 33%;
+    margin: auto;
+  }
+  #sec-con {
+    border: 1px solid transparent;
+    /* height: 200px; */
+    display: flex;
+    width: 20%;
+    height: 30px;
+    margin: auto;
+    gap: 5%;
+  }
+  #g-play {
+    border: 1px solid transparent;
+  }
+  #a-play {
+    border: 1px solid transparent;
+  }
+  #last-con-f {
+    border: 1px solid transparent;
+    display: flex;
+  }
+  .last-f1 {
+    border: 1px solid transparent;
+    flex: 1;
+  }
+  .last-f1-in1 {
+    border: 1px solid transparent;
+    margin-top: 10px;
+  }
+  .last-f1-in1 {
+    border: 1px solid transparent;
+  }
+  #m-con {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .m-con-1 {
+    flex: 1;
+  }
+  .m-con-2 {
+    flex: 1;
+  }

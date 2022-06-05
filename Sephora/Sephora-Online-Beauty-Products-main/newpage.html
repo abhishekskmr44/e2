@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/newpage.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+    <Header></Header>
+    <Main>
+        <div id="new_container">
+            <div id="line1">
+                <p id="font">New</p>
+                <div class="main1">
+                    <div><h3>New</h3></div>
+                    <div><p class="options">Just Dropped</p></div>
+                    <div><p class="options">Makeup</p></div>
+                    <div><p class="options">Skincare</p></div>
+                    <div><p class="options">Fragrance</p></div>
+                    <div><p class="options">Bath & Body</p></div>
+                    <div><p class="options">Hair</p></div>
+                    <div><p class="options">Tools & Brushes</p></div>
+                </div>
+            </div>
+            <div id="line2">
+                <div class="big_new">New</div>
+                <div id="products"> 
+                </div>
+            </div> 
+    </Main>
+    <footer></footer>
+</body>
+</html>
+<script src="scripts/newpage.js"></script>
+<script type="module">
+    import {navbar,fotter} from "../components/navbar.js";
+    document.querySelector("header").innerHTML=navbar();
+    document.querySelector("footer").innerHTML=fotter();
+    
+
+
+    document.querySelector("#inputText").addEventListener("click",()=>{
+        document.querySelector("#searchIcon").style.display="none";
+        document.querySelector("#inputText").style.backgroundColor="white"
+    })
+
+
+    // =======================================================================cart ===========================
+
+document.getElementById("cart").addEventListener("click",()=>{
+    window.location.href="cart.html"
+})
+
+// ==========================================================================================================
+let arr = JSON.parse(localStorage.getItem("items"))||[];
+document.getElementById("count").innerHTML=arr.length;
+
+// ==================================================Name Change======================================================
+
+var userinfo = JSON.parse(localStorage.getItem("UserInfo"))||[];
+document.querySelector("#userName").innerHTML=userinfo.name;
+
+
+// =============================================Debouncing ===========================================================
+
+document.getElementById("inputText").addEventListener("keypress",(ele)=>{
+    
+    if(ele.key == "Enter")
+    {
+        var userSearch = document.getElementById("inputText").value;
+        localStorage.setItem("userSearch",userSearch);
+        window.location.href = "searchItem.html";
+    }
+})
+
+</script>

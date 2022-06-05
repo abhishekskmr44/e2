@@ -1,32 +1,41 @@
 import React from "react";
-import { Button, ButtonGroup, Select } from "@chakra-ui/react";
-const Pagination = ({ pagenos, setpage }) => {
+
+import styles from './button.module.css'
+const Pagination = ({page,setPage,limit,setLimit,totalcount}) => {
   // TODO: Remove below const and instead import them from chakra
-  const { pageno, limit,total } = pagenos;
-  const forupdate = (todochanges) => {
-    setpage({
-      ...pagenos,
-      ...todochanges,
-    });
-  }
+  // const Button = () => <div />;
+  // const ButtonGroup = () => <div />;
+  // const Select = () => <div />;
+
   return (
-    <ButtonGroup>
-      <Button onClick={() => forupdate({pageno:1})} data-cy="pagination-first-button">First</Button>
-      <Button onClick={() => forupdate({pageno:pageno-1})}  data-cy="pagination-previous-button">Previous</Button>
-      <Select value={limit} onChange={(e) => forupdate({limit:e.target.value})} data-cy="pagination-limit-select">
-        <option value="3" data-cy="pagination-limit-3">
-          3
-        </option>
-        <option value="6" data-cy="pagination-limit-6">
-          6
-        </option>
-        <option value="9" data-cy="pagination-limit-9">
-          9
-        </option>
-      </Select>
-      <Button onClick={() => forupdate({pageno:pageno+1})} data-cy="pagination-next-button">Next</Button>
-      <Button onClick={() => forupdate({pageno:Math.ceil(total/limit)})} data-cy="pagination-last-button">Last</Button>
-    </ButtonGroup>
+    <div className={styles.button}>
+      {page}
+      <button data-cy="pagination-first-button" onClick={()=>{
+        setPage(1)
+      }}>First</button>
+      <button data-cy="pagination-previous-button" 
+      // disabled={page=1}
+      onClick={()=>{
+        if(page>1){
+          
+          setPage(page-1)
+        }
+      }}>previous</button>
+      <select data-cy="pagination-limit-select" onChange={(e)=>setLimit(Number(e.target.value))}>
+        <option data-cy="pagination-limit-3">3</option>
+        <option data-cy="pagination-limit-6">6</option>
+        <option data-cy="pagination-limit-9">9</option>
+      </select>
+      <button data-cy="pagination-next-button"
+        // disabled = {totalcount <= page*limit}
+        onClick={() => setPage(page + 1)}
+      >Next</button>
+      <button data-cy="pagination-last-button" 
+      // disabled={totalcount<=page*limit}
+      onClick={()=>{
+        setPage(page*limit)
+      }}>Last</button>
+    </div>
   );
 };
 

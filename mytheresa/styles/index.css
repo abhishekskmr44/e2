@@ -1,0 +1,262 @@
+#body {
+    border: 1px solid transparent;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  #container {
+    border: 1px solid transparent;
+    width: 88%;
+    margin: auto;
+  }
+  #first-image-div img {
+    cursor: pointer;
+  }
+  /* new arrivals */
+  #new-arrivals {
+    border: 1px solid transparent;
+    margin: auto;
+    width: 13%;
+    margin-top: 30px;
+  }
+  #new-arrivals-container {
+    border: 1px solid transparent;
+    display: flex;
+    gap: 1%;
+  }
+  #new-arrivals-container-firstbox {
+    border: 1px solid transparent;
+    width: 23%;
+    height: 440px;
+    flex: 1;
+  }
+  .nacf-1 {
+    border: 1px solid transparent;
+    height: 16%;
+    display: flex;
+    gap: 35%;
+  }
+  .nacf-inside {
+    font-size: 13px;
+    padding-left: 30px;
+    line-height: 0;
+    color: #9999a6;
+  }
+  .nacf-inside-2 {
+    margin-top: 5px;
+    color: rgb(187, 187, 187);
+  }
+  .nacf-2 {
+    border: 1px solid transparent;
+    height: 65%;
+  }
+  .nacf-3 {
+    border: 1px solid transparent;
+    height: 15%;
+  }
+  .nacf-3 h5,
+  p {
+    line-height: 0;
+    padding-left: 35%;
+  }
+  .nacf-3 h5 {
+    padding-left: 39%;
+  }
+  /* end */
+  /* view all buttin */
+  #view-all {
+    border: 1px solid transparent;
+    width: 10%;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  #view-all button {
+    height: 33px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  /* end */
+  #office-essentials {
+    margin-top: 50px;
+    border: 1px solid transparent;
+    height: 580px;
+    display: flex;
+    cursor: pointer;
+  }
+  /* end */
+  /* new season */
+  #new-season-container {
+    margin-top: 30px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 1%;
+  }
+  #new-season-container-firstbox {
+    border: 1px solid transparent;
+    width: 23%;
+    height: 440px;
+    flex: 1;
+  }
+  .nscf-1 {
+    border: 1px solid transparent;
+    height: 16%;
+    display: flex;
+    gap: 35%;
+  }
+  .nscf-1 > div {
+    margin-top: 5%;
+  }
+  .nscf-inside {
+    font-size: 13px;
+    padding-left: 30px;
+    line-height: 0;
+    color: #9999a6;
+  }
+  .nscf-inside-2 {
+    margin-top: 5px;
+    color: rgb(187, 187, 187);
+  }
+  .nscf-2 {
+    border: 1px solid transparent;
+    height: 65%;
+  }
+  .nscf-3 {
+    border: 1px solid transparent;
+    height: 15%;
+  }
+  .nscf-3 h5,
+  p {
+    line-height: 0;
+    padding-left: 30%;
+  }
+  .nscf-3 h5 {
+    padding-left: 38%;
+  }
+  #view-all {
+    border: 1px solid transparent;
+    width: 10%;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  #view-all button {
+    height: 33px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  /* end */
+  /* sale */
+  #sale {
+    margin-top: 50px;
+    border: 1px solid transparent;
+    height: 580px;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  /* end */
+  /* new season */
+  #last-box-container {
+    margin-top: 30px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 1%;
+  }
+  #last-box-container-firstbox {
+    border: 1px solid transparent;
+    width: 23%;
+    height: 440px;
+    flex: 1;
+  }
+  .lbcf-1 {
+    border: 1px solid transparent;
+    height: 16%;
+    display: flex;
+    gap: 35%;
+  }
+  .lbcf-1 > div {
+    margin-top: 5%;
+    padding-left: 80%;
+  }
+  .lbcf-inside-2 {
+    margin-top: 5px;
+    color: rgb(187, 187, 187);
+  }
+  .lbcf-2 {
+    border: 1px solid transparent;
+    height: 65%;
+  }
+  .lbcf-3 {
+    border: 1px solid transparent;
+    height: 15%;
+  }
+  .lbcf-3 h5,
+  p {
+    line-height: 0;
+    padding-left: 22%;
+  }
+  .lbcf-3 h5 {
+    padding-left: 38%;
+  }
+  #view-all {
+    border: 1px solid transparent;
+    width: 10%;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  #view-all button {
+    height: 33px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  #view-all-container {
+    margin-bottom: 30px;
+  }
+  /* end */
+  /* last text */
+  #txt-container {
+    border: 1px solid transparent;
+    width: 88%;
+    margin-top: 30px;
+    margin: auto;
+    font-size: 13px;
+  }
+  #txt-first-box {
+    border: 1px solid transparent;
+  }
+  #txt-first-box > div {
+    border: 1px solid transparent;
+    width: 49%;
+    margin-left: 0;
+    padding-left: 0%;
+    margin: auto;
+    margin-right: 29%;
+  }
+  #txt-second-box {
+    border: 1px solid transparent;
+  }
+  #txt-third-box {
+    margin-top: 10px;
+    border: 1px solid transparent;
+  }
+  #fourth-box-container {
+    border: 1px solid transparent;
+    margin-top: 20px;
+    display: flex;
+  }
+  #fourth-1 {
+    padding-left: 20px;
+  }
+  #txt-fifth-box {
+    margin-top: 18px;
+  }
+  #txt-sixth-box {
+    margin-top: 10px;
+  }
+  
+  /* end */

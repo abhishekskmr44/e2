@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <style>
+      #cart {
+        position: fixed;
+        top: 306px;
+        right: 90px;
+        font-size: 30px;
+      }
+      #append > div {
+        width: 20%;
+        margin: 20px;
+      }
+      #append > div > img {
+        width: 100%;
+      }
+    #cartpage {
+        position: fixed;
+        top: 300px;
+        right: 30px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+      <!-- navbar start -->
+    <div id="navbar">
+        <div id="con-div">
+        <div id="up-div">
+          <div id="left-div">
+            <div>WOMEN</div>
+            <div>MEN</div>
+            <div>KIDS</div>
+          </div>
+          <div id="right-div">
+            <div>Signup for Newsletter</div>
+            <div><a style="text-decoration: none;" href="../pages/signup.html">My account</a></div>
+            <div>My wishlist <i class="lni lni-heart"></i></div>
+            <div>India | English</div>
+          </div>
+        </div>
+        <div id="down-div">
+          <div id="down-img">
+            <img
+              width="100%"
+              src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20211221T175655"
+              alt=""
+            />
+          </div>
+          <div id="right-shopB">
+            SHOPPING BAG <i class="lni lni-shopping-basket"></i>
+          </div>
+          <div id="diff-products">
+            <div id="part-a">
+              <a href=""><div id="new-arrivals">NEW ARRIVALS</div></a>
+              <a href=""><div id="designers">DESIGNERS</div></a>
+              <a href=""><div id="clothing">CLOTHING</div></a>
+              <a href=""><div id="shoes">SHOES</div></a>
+              <a href=""><div id="bags">BAGS</div></a>
+              <a href=""><div id="accessories">ACCESSORIES</div></a>
+              <a href=""><div id=>SALE</div></a>
+              <a href=""><div id="new-season">NEW SEASON</div></a>
+            </div>
+            <div id="part-b">
+              <input type="text" placeholder="Search for" id="input-search" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="last-div">FREE SHIPPING on Orders over ₹
+          
+        600</div>
+    </div>
+    </div>
+      <!-- navbar end -->
+    <div id="append"></div>
+    <div id="cart">0</div>
+    <div id="cartpage">
+        <button onclick="gotocart()">Go to Cart</button>
+    </div>
+  </body>
+</html>
+<script>
+  let obj = [
+    {
+      image:
+        "https://img.mytheresa.com/2176/2176/90/jpeg/catalog/product/98/P00595914.jpg",
+      name: "TOM FORD",
+      subName: "Cashmere padded parka",
+      price: 100,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/cd/P00621908.jpg",
+      name: "BALENCIAGA",
+      subName: "Cut BB ear cuff",
+      price: 1000,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/6e/P00641901_d2.jpg",
+      name: "RICK OWENS",
+      subName: "Bogun platform leather boots",
+      price: 2000,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/bb/P00621904_b1.jpg",
+      name: "BOTTEGA VENETA",
+      subName: "Flared Chenille pants",
+      price: 900,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/bb/P00621904_b1.jpg",
+      name: "BOTTEGA VENETA",
+      subName: "Flared Chenille pants",
+      price: 500,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/3e/P00611783_b1.jpg",
+      name: "TOM FORD",
+      subName: "Grained leather tote",
+      price: 900,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/ed/P00611797_d2.jpg",
+      name: "TOM FORD",
+      subName: "Grained leather boat shoes",
+      price: 1000,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/c9/P00616038_b1.jpg",
+      name: "GABRIELA HEARST",
+      subName: "GABRIELA HEARST",
+      price: 700,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/13/P00579191_b1.jpg",
+      name: "SAINT LAURENT",
+      subName: "Giant suede bowling bag",
+      price: 500,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a1/P00648854_d2.jpg",
+      name: "TOD'S",
+      subName: "Slip-on suede espadrilles",
+      price: 900,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/08/P00616039_b1.jpg",
+      name: "GABRIELA HEARST",
+      subName: "Ernest linen and cotton pants",
+      price: 700,
+    },
+     {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/bb/P00621912_b1.jpg",
+      name: "BOTTEGA VENETA",
+      subName: "Wool crewneck sweater",
+      price: 700,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/ef/P00647772_d2.jpg",
+      name: "GIVENCHY",
+      subName: "G Cube gold tone bracelet",
+      price: 800,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/9d/P00525534_d2.jpg",
+      name: "BOTTEGA VENETA",
+      subName: "Lug leather ankle boots",
+      price: 900,
+    },
+    {
+      image:
+        "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/5a/P00648757_b1.jpg",
+      name: "LEMAIRE",
+      subName: "Pleated cotton pants",
+      price: 500,
+    },
+  ];
+
+  let count = 0;
+  let cartDet = JSON.parse(localStorage.getItem("cartItem")) || [];
+
+  document.getElementById("cart").textContent = cartDet.length;
+  console.log(obj);
+
+  function gotocart(){
+      window.location.href="cart.html"
+  }
+
+  show();
+  function show() {
+    obj.map(function (user) {
+      let app = document.getElementById("append");
+      let div = document.createElement("div");
+      div.style.display = "inline-block";
+
+      let img = document.createElement("img");
+      img.src = user.image;
+
+      let name = document.createElement("div");
+      name.innerHTML = user.name;
+
+      let subname = document.createElement("div");
+      subname.innerHTML = user.subName;
+
+      let price = document.createElement("h3");
+      price.textContent = user.price;
+      // console.log('price:', price)
+
+      let add = document.createElement("button");
+      add.id = "btn";
+      add.textContent = "addtocart";
+      add.addEventListener("click", function () {
+        let imgL = img.src;
+        let nameL = name.innerHTML;
+        let priceL = price.textContent;
+        let coL = count++;
+
+        let cartItem = {
+          name: nameL,
+          img: imgL,
+          price: priceL,
+          count: coL,
+        };
+
+        addtocart(cartItem);
+      });
+
+      div.append(img, name, subname, price, add);
+      app.append(div);
+    });
+  }
+
+  function addtocart(cartItem) {
+    cartDet.push(cartItem);
+    localStorage.setItem("cartItem", JSON.stringify(cartDet));
+
+    window.location.reload();
+  }
+</script>

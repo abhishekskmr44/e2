@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /* border: 1px solid red; */
+    width: 100vw;
+    height: 100vh;
+}
+#productsTypes{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    
+}
+#productsTypes{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+
+.dropbtn {
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: larger;
+    /* margin-left: 2rem; */
+}
+
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100vw;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+
+    z-index: 1;
+}
+
+.dropdown-content>div a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main
+{
+  display: flex;
+  margin-left: 5%;
+}
+
+#main-pic img{
+    width: 85%;
+    margin: 0 7% 2%;
+    cursor: pointer;
+}
+.headings {
+    display: flex;
+}
+.headings>p {
+    font-size: 35px;
+    margin-left: 40%;
+}
+.headings>a {
+    color: rgb(2, 92, 177);
+    margin-left: 25%;
+    margin-top: 1%;
+}
+.cards {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    width: 15%;
+}
+.item>a {
+    margin: 5px 0;
+}
+#sub-pics {
+    margin: 5% 12%;
+    display: flex;
+}
+#sub-pics img {
+    margin-right: 2%;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 7%;
+    margin: 2% 15%;
+}
+#container>div {
+    cursor: pointer;
+}
+#last-pics {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 10%;
+    cursor: pointer;
+}
+

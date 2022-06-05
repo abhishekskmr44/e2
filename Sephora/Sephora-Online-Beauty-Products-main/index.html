@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://sephora-cdn.inside-graph.com/custom/1-Default_Sephora_Chat_Icon.png">
+    <title>Cosmetics,Beauty Products,Frag</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+</head>
+<body>
+    <header>   
+    </header>
+    <Main>
+
+        <div id="main-pic">
+            <img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-25-hp-slide-bestsellers-desktop-us-slice.jpeg?imwidth=1200" alt="">
+        </div>
+        <div class="headings">
+            <p>Just Arrived</p>
+            <a href="#">See more</a>
+        </div>
+        <div class="cards">
+            <div class="item">
+                <img src="https://www.sephora.com/productimages/sku/s2113033-main-zoom.jpg?imwidth=97" alt="">
+                <h6>only at sephora</h6>
+                <a href="#" style="color: black;"><h5>fenty Beauty by Rihanna</h5></a> 
+                <p>Diamond Bomb All-Over Diamond Vell</p>
+            </div>
+            <div class="item">
+                <img src="https://www.sephora.com/productimages/sku/s2106086-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=97" alt="">
+                <h6>only at sephora</h6>
+                <a href="#" style="color: black;"><h5>OLEHENRIKSEN</h5></a> 
+                <p>Diamond Bomb All-Over Diamond Vell</p>
+            </div>
+            <div class="item">
+                <img src="https://www.sephora.com/productimages/sku/s2126985-main-zoom.jpg?imwidth=97" alt="">
+                <h6>only at sephora</h6>
+                <a href="#" style="color: black;"><h5>Kerastase</h5></a> 
+                <p>Diamond Bomb All-Over Diamond Vell</p>
+            </div>
+            <div class="item">
+                <img src="https://www.sephora.com/productimages/sku/s2152593-main-zoom.jpg?imwidth=97" alt="">
+                <h6> </h6>
+                <a href="#" style="color: black;"><h5>Jouer Cosmetics</h5></a> 
+                <p>Diamond Bomb All-Over Diamond Vell</p>
+            </div>
+            <div class="item">
+                <img src="https://www.sephora.com/productimages/sku/s2111938-main-zoom.jpg?pb=2020-03-allure-best-2019&imwidth=97" alt="">
+                <h6>only at sephora</h6>
+                <a href="#" style="color: black;"><h5>PAT McGRATH LABS</h5></a> 
+                <p>Diamond Bomb All-Over Diamond Vell</p>
+            </div>
+        </div>
+        <div id="sub-pics">
+            <img src="https://www.sephora.com/contentimages/homepage/020822/Homepage/DesktopMweb/2022-2-17-hp-beauty-offers-paulas-choice-skin-perfecting-desktop-us-ca-slice.jpeg?imwidth=1200" alt="">
+            <img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-23-hp-marketing-banner-clean-mbc-desktop-us-ca-slice.jpeg?imwidth=482" alt="">
+        </div>
+        <div class="headings">
+            <p>Recommended For You</p>
+            <a href="#">See more</a>
+        </div>
+        <div id="container">
+            <!-- append here -->
+        </div>
+        <p style="font-size: 35px; text-align: center; margin-top: 18%;">More Beauty For You</p>
+        <div id="last-pics">
+            <img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-22-hp-bot-nav-sc-sku-launches-good-skincare-desktop-us-slice.jpeg?imwidth=221" alt="">
+            <img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-2-23-hp-bot-nav-clean-mbc-clean-foundations-desktop-us-slice.jpeg?imwidth=221" alt="">
+            <img src="https://www.sephora.com/contentimages/homepage/020221/Homepage/DesktopMweb/2021-02-01-hp-botnav-bi-rewards-generic-refresh-us-ca-d-slice.jpeg?imwidth=221" alt="">
+            <img src="https://www.sephora.com/contentimages/homepage/020221/Homepage/DesktopMweb/2021-02-01-hp-botnav-bi-rewards-generic-refresh-us-ca-d-slice.jpeg?imwidth=221" alt="">
+        </div>
+        <div>
+            <img src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-13-hp-bottom-evergreen-banner-conv-hub-same-day-desktop-us-ca-slice.jpeg?imwidth=980" alt="">
+        </div>
+
+    </Main>
+    <footer>
+    </footer>
+</body>
+</html>
+
+
+<script src="scripts/index.js"></script>
+<script type="module">
+    import {navbar,fotter} from "../components/navbar.js";
+    document.querySelector("header").innerHTML=navbar();
+    document.querySelector("footer").innerHTML=fotter();
+    var DaysId = document.querySelector("#DaysId");
+    for (var i = 1; i <= 31; i++) {
+        var option = document.createElement("option");
+        option.innerHTML = i;
+        DaysId.append(option);
+    }
+
+    var lgn = document.querySelector("#login_Button")
+    lgn.addEventListener("click",()=>{
+        var div  = document.querySelector(".login-div");
+        div.style.display="block";
+    })
+
+    var lgn = document.querySelector("#Register_button")
+    lgn.addEventListener("click",()=>{
+        var div = document.querySelector(".singup-div");
+        div.style.display="block"
+    })
+    document.querySelector("body").addEventListener("dblclick",()=>{
+        var div1  = document.querySelector(".login-div");
+        div1.style.display="none";
+        var div2 = document.querySelector(".singup-div");
+        div2.style.display="none"
+    })
+    document.querySelector("#cancel").addEventListener("click",()=>{
+
+        var div1  = document.querySelector(".login-div");
+        div1.style.display="none";
+        var div2 = document.querySelector(".singup-div");
+        div2.style.display="none"
+    })
+
+    document.querySelector("#inputText").addEventListener("click",()=>{
+        document.querySelector("#searchIcon").style.display="none";
+        document.querySelector("#inputText").style.backgroundColor="white"
+    })
+
+
+// ==================================================Login and Sing in ======================================================
+
+// Register Page
+let singUPData = async ()=>
+{
+    try {
+        
+        let firstName = document.getElementById("firstNameId").value;
+        let lastName = document.getElementById("lastNameId").value;
+        let emailId = document.getElementById("emailId").value;
+        let password = document.getElementById("passwordId").value;
+        let phone = document.getElementById("phoneId").value;
+        let month = document.getElementById("monthsName").value;
+        let day = document.getElementById("DaysId").value;
+        let birth = `${month}/${day}`
+        let zipCode = document.getElementById("zipId").value;
+        let fullName = firstName+" "+lastName;
+
+        let register_data = {
+            name:fullName,
+            email:birth,
+            password:password,
+            username:emailId,
+            mobile:phone,
+            description:zipCode
+        }
+        register_data = JSON.stringify(register_data);
+        let requst = await fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
+            method:"POST",
+            body:register_data,
+            headers:{
+                "Content-Type": "application/json",
+            },
+        });
+
+        let collect = await requst.json();
+        console.log(collect)
+        alert(collect.message);
+        if(collect.error !== true)
+        {
+        var div2 = document.querySelector(".singup-div");
+        div2.style.display="none"
+        }
+    
+    }
+    catch (error) {
+        console.log("Error:",error)
+    }
+}
+
+document.querySelector("#singup_form").addEventListener("submit",(event)=>{
+    event.preventDefault()
+    singUPData()
+    
+    
+})
+// console.log(document.getElementById("submitId").value)
+
+// Login Page 
+
+let loginData = async ()=>
+{
+    try {
+    let loginUseremail = document.getElementById("log-emailId").value;
+    let loginUserpassword = document.getElementById("log-passwordId").value;
+
+    let loginUser = {
+        username:loginUseremail,
+        password:loginUserpassword
+    }
+    let login = JSON.stringify(loginUser)
+    let request =  await fetch(
+        "https://masai-api-mocker.herokuapp.com/auth/login",
+        {
+        method:"POST",
+        body:login,
+        headers:{
+                "Content-Type": "application/json"
+            },
+    })
+    let collect = await request.json()
+      getdata(loginUser.username,collect.token)   
+    } catch (error) {
+        console.log("erro h but asata",error)
+        alert("wrong email & password");
+    }
+    
+}
+let getdata = async (username,token) =>{
+    try {
+        let res = await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+            headers:{
+                "Content-Type": "application/json",
+                Authorization : `Bearer ${token}`
+            },
+
+        })
+        let data = await res.json();
+        console.log("data",data);
+        alert("Login successful");
+        localStorage.setItem("UserInfo",JSON.stringify(data));
+        window.location.href="newindex.html"
+        
+    } catch (error) {
+        alert("Data not matched!!!")
+    }
+}
+document.querySelector("#login-form").addEventListener("submit",(event)=>{
+    event.preventDefault();
+    loginData();
+})
+
+
+// =======================================================================cart ===========================
+
+document.getElementById("cart").addEventListener("click",()=>{
+    window.location.href="cart.html"
+})
+
+// ==========================================================================================================
+let arr = JSON.parse(localStorage.getItem("items"))||[];
+document.getElementById("count").innerHTML=arr.length;
+</script>
